@@ -10,4 +10,9 @@ class MyUser:
 	def zipcode(self):
 		zipcode = raw_input("What is your name?")
 
-newUser = MyUser()		
+	def __init__(self, user):
+		self.user = user
+
+new = MyUser
+
+print MyUser
