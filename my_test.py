@@ -11,5 +11,9 @@ class MyTests(unittest.TestCase):
 	def test_cap(self):
 		self.assertTrue(unit.name[0].isupper())
 
+	def test_user(self):
+		self.assertTrue(unit.new.name)	
+		self.assertTrue(unit.new.zipcode)
+
 if __name__ == '__main__':
 	unittest.main()		
