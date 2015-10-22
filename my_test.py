@@ -15,5 +15,8 @@ class MyTests(unittest.TestCase):
 		self.assertTrue(unit.new.name)	
 		self.assertTrue(unit.new.zipcode)
 
+	def test_password(self):
+		self.assertTrue(unit.pwd.password)	
+
 if __name__ == '__main__':
 	unittest.main()		
