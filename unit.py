@@ -5,9 +5,14 @@ name = name.title()
 
 class MyUser:
 	'Create new user class'
-	def __init__(self, name, zipcode):
+	def __init__(self, name, zipcode, unique_id):
 		self.name = name
 		self.zipcode = zipcode
+		# figure out the best way to create a unique_id
+		unique_id = uuid.uuid4()
+
+		self.unique_id = unique_id
+
 
 class PasswordGen:
 	'Create password for user'
@@ -27,7 +32,7 @@ class PasswordGen:
 		random.shuffle(pwlist)
 		pwstring = "".join(pwlist)
 
-		self.password = pwstring
+		self.password = pwstring	
 
 
 new = MyUser("Joey", 02302)

@@ -1,10 +1,7 @@
 import unittest
 import unit
 
-class MyTests(unittest.TestCase):
-	def test_true(self):
-		self.assertTrue(1 == 1)
-
+class UserTests(unittest.TestCase):
 	def test_false(self):
 		self.assertFalse(2 == 3)	
 	
