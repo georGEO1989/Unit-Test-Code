@@ -8,12 +8,6 @@ class MyUser:
 	def __init__(self, name, zipcode):
 		self.name = name
 		self.zipcode = zipcode
-		'''
-		# figure out the best way to create a unique_id
-		unique_id = uuid.uuid4()
-
-		self.unique_id = unique_id
-		'''
 
 class PasswordGen:
 	'Create password for user'
